@@ -4,12 +4,12 @@
     <div class="avatar nav-line">
       <img class="avatar-img iconfont" @click="goToUser" v-if="user.avatarUrl" :src="user.avatarUrl" />
       <img class="avatar-img iconfont" @click="goToUser" src="../assets/img/u-no-avatar.png" v-if="!user.avatarUrl">
-      <div class="icon-text" @click="goToUser">{{user.userId ? user.nickname : '来登录呀'}}</div>
+      <div class="icon-text" @click="goToUser">{{user.userId ? user.nickname : '登录'}}</div>
     </div>
     <div class="nav-line">
       <a href="#/search">
         <i class="iconfont icon-search"></i>
-        <div class="icon-text">寻觅</div>
+        <div class="icon-text">搜索</div>
       </a>
     </div>
     <div class="nav-line">
@@ -50,12 +50,12 @@
         <div class="icon-text">设置</div>
       </a>
     </div>
-    <div class="nav-line">
-      <a href="#/about">
-        <i class="iconfont icon-version"></i>
-        <div class="icon-text">关于</div>
-      </a>
-    </div>
+<!--    <div class="nav-line">-->
+<!--      <a href="#/about">-->
+<!--        <i class="iconfont icon-version"></i>-->
+<!--        <div class="icon-text">关于</div>-->
+<!--      </a>-->
+<!--    </div>-->
   </div>
 </template>
 
